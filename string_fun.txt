@@ -1,0 +1,27 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string str;
+    cout<<"Enter a string:";
+    getline(cin,str);
+    cout<<"\nEntered String is:\n"<<str;
+    int len=str.length();
+    cout<<"\nLength of String is:"<<len;
+    string str1="Shravani";
+    if(str.compare(str1)==0)
+    {
+        cout<<"\nTwo Strings are Equal"<<endl;
+    }
+    else
+    {
+        cout<<"\nTwo Strings are not equal"<<endl;
+    }
+    str1.append(" Siddhul");
+    cout<<"\nNew str1:"<<str1;
+    str.clear();
+    cout<<"\nLength of str is:"<<str.length();
+    return 0;
+    
+}
